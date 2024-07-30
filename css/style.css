@@ -58,7 +58,7 @@ h2 {
 }
 
 .resume_left .r_profile_pic {
-    background: var(--rleft-bg);
+    background: var(--rright-bg);
 }
 
 .resume_left .r_profile_pic img {
@@ -145,6 +145,41 @@ h2 {
     gap: 20px;
     width: 40%;
 }
+
+@media (max-width: 1000px) {
+    .r_namerole {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .r_namerole {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .r_info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        width: 100%;
+        margin-top: 10px;
+ 
+    }
+}
+
+@media (max-width: 700px) {
+    .r_info {
+        font-size: 12px;
+        gap: 12px;
+     
+    }
+}
+
+
 
 .r_info a{
     color: var(--primary-text-clr);
